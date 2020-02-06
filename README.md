@@ -4,7 +4,7 @@
 
 In today's project, you will use Ajax to make GET, POST, PUT/PATCH, and DELETE requests, making a one-page application in the process.
 
-Your application is a note-taking app. It should display a list of all your notes and give you the ability to create new notes, edit old notes, and delete notes. Notes are made up of a title, text, optional tags, and the date/time most recently updated.
+Your application is a note-taking app. It should display a list of all your notes and give you the ability to create new notes, edit old notes, and delete notes. Notes are made up of a title, text, and the date/time most recently updated.
 
 No wireframe is provided. You will have to create a design yourself. Looking at Google Keep may provide some inspiration.
 
