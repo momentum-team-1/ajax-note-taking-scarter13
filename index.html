@@ -4,9 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta.25/shoelace.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="moment.min.js"></script>
   <title>Notes</title>
 </head>
 <body>
-  
+  <!-- get inside the correct directory and run    npm start     from the command line to connect to the server -->
+  <main class ="mar-md">
+
+    <h1>Notes</h1>
+
+    <form id="note-form" class ="form">
+      <label for="note-title">Note Title</label>
+      <input type="text" id="note-title">      
+      <label for="note-text">New Note</label>
+      <input type="text" id="note-text">
+        <div class="mar-md">
+        <button type="submit">Add New Note</button>
+        </div>
+    </form>
+<section class="notes">
+
+</section>
+</main>
 </body>
 </html>
