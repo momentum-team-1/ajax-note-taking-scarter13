@@ -2,6 +2,11 @@
 
 .notes {
     display:flex;
-    height: 250px;
+    flex-wrap: wrap;
+}
+
+.post-it {
+    inline-size: 25%;
     background-color: gainsboro;
+    border: 2px solid gray;
 }
