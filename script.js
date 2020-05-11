@@ -96,6 +96,7 @@ wall.addEventListener("click", function(event){
         let targetFoot = (event.target.parentElement)
         let targetPostIt = (targetFoot.parentElement.dataset.id)
         console.log (targetPostIt)
+        // editNote(targetPostIt)
     }
 
 })
@@ -107,7 +108,34 @@ function deletePostIt (itemId) {
     .then (response => response.json())
     .then (data => console.log(data))
 }
+// attempted to create  new form, but couldn't make it work.
+// function editNote (itemId) {
+    // let editNoteBox = document.createElement ("div")
+    // let editNote = document.createElement ("form");
+    // let titleEdit = document.createElement ("input")
+    // titleEdit.type = ("text")
+    // titleEdit.id = ("title-edit")
+    // editNote.appendChild (titleEdit)
+    // editNoteBox.appendChild (editNote)
 
+    // let button = document.querySelector ("#button")
+    // button.innertext = ("Edit Note")
+    // noteForm.addEventListener('submit', function (event){
+    //     event.preventDefault()
+    //     let noteTitleInput= document.querySelector ('#note-title')
+    //     let noteTitle = noteTitleInput.value
+    //     noteTitleInput.value = ''
+    //     let noteTextInput = document.querySelector ('#note-text')
+    //     let noteText = noteTextInput.value
+    //     noteTextInput.value = ''
+
+    // fetch (`http://localhost:3000/notes/${itemId}`, {
+    //     method: 'PUT',
+    //     headers: {"Content-Type": "application/json"},
+    //     body: JSON.stringify({ 'title': noteTitle, 'body': noteText})
+    //     })
+
+// })
 renderNotes()
 
 
